@@ -9,7 +9,7 @@
     <style>
         @page {
             size: letter landscape;
-            margin: 0.15in;
+            margin: 0.3in; /* Increased for safer printing */
         }
         body {
             font-family: 'Inter', sans-serif;
@@ -18,66 +18,66 @@
             -webkit-print-color-adjust: exact;
         }
         .print-container {
-            width: 10.7in;
+            width: 10.4in; /* Adjusted for wider margins */
             margin: 0 auto;
             position: relative;
         }
         .canon-red { color: #CC0000; }
         
-        table { border-collapse: collapse; width: 100%; font-size: 8.2px; line-height: 1.1; }
+        table { border-collapse: collapse; width: 100%; font-size: 8px; line-height: 1; }
         th { 
             background-color: #f3f4f6; 
             font-weight: 800; 
             text-transform: uppercase; 
             letter-spacing: 0.01em;
-            border-bottom: 2px solid #1a1a1a;
-            padding: 4px 1px;
+            border-bottom: 1.5px solid #1a1a1a;
+            padding: 3px 1px;
             text-align: left;
             color: #4b5563;
         }
         td { 
             border-bottom: 1px solid #e5e7eb; 
-            padding: 2px 1px; 
+            padding: 1px 1px; /* Tighter vertical spacing */
             vertical-align: middle;
         }
         .category-header {
             color: white;
             font-weight: 800;
             text-transform: uppercase;
-            padding: 4px 8px;
-            font-size: 9px;
+            padding: 3px 8px;
+            font-size: 8.5px;
         }
         .category-personal { background-color: #1e40af; }
         .category-workgroup { background-color: #065f46; }
         .category-departmental { background-color: #92400e; }
         .category-production { background-color: #CC0000; }
 
-        .product-model { font-weight: 800; color: #1a1a1a; font-size: 9px; }
-        .product-img { width: 36px; height: auto; object-fit: contain; }
+        .product-model { font-weight: 800; color: #1a1a1a; font-size: 8.5px; }
+        .product-img { width: 34px; height: auto; object-fit: contain; }
         
         @media print {
             body { background: white; margin: 0; padding: 0; }
         }
 
         .header-bento {
-            border-bottom: 3px solid #CC0000;
-            margin-bottom: 5px;
+            border-bottom: 2px solid #CC0000;
+            margin-bottom: 4px;
         }
     </style>
 </head>
-<body class="p-1">
+<body class="p-0">
 
     <div class="print-container">
         <!-- Brand Header -->
-        <header class="header-bento flex justify-between items-center pb-2">
-            <div class="flex items-center gap-4">
-                <img src="https://i.ibb.co/hFypK2Zn/Canon-Logo-2.png" alt="Canon Logo" class="h-6">
-                <div class="h-6 w-px bg-gray-300"></div>
-                <img src="https://i.ibb.co/svcfqT91/image-FORMULA2.png" alt="imageFORMULA Logo" class="h-4">
+        <header class="header-bento flex justify-between items-center pb-1">
+            <div class="flex items-center gap-3">
+                <img src="https://i.ibb.co/hFypK2Zn/Canon-Logo-2.png" alt="Canon Logo" class="h-5">
+                <div class="h-5 w-px bg-gray-300"></div>
+                <img src="https://i.ibb.co/svcfqT91/image-FORMULA2.png" alt="imageFORMULA Logo" class="h-3.5">
             </div>
             <div class="text-right">
-                <p class="text-[8px] font-bold text-gray-400 tracking-widest uppercase">Document Scanner Line Card</p>
-                <p class="text-[9px] font-black italic">CURRENT AS OF: MAY 14, 2026</p>
+                <p class="text-[7.5px] font-bold text-gray-400 tracking-widest uppercase leading-none">Document Scanner Line Card</p>
+                <p class="text-[8px] font-black italic leading-none">CURRENT AS OF: MAY 14, 2026</p>
             </div>
         </header>
 
@@ -115,7 +115,7 @@
                     <td>8 / 16</td>
                     <td>10</td>
                     <td>8.5 x 14</td>
-                    <td>250</td>
+                    <td>100</td>
                     <td>USB 2.0</td>
                     <td>1-yr AE</td>
                     <td class="text-center">●</td>
@@ -136,7 +136,7 @@
                     <td>15 / 30</td>
                     <td>20</td>
                     <td>8.5 x 14</td>
-                    <td>700</td>
+                    <td>500</td>
                     <td>USB 2.0/3.0</td>
                     <td>1-yr AE</td>
                     <td class="text-center">●</td>
@@ -160,7 +160,7 @@
                     <td>25 / 50</td>
                     <td>30</td>
                     <td>8.5 x 14</td>
-                    <td>2,500</td>
+                    <td>1,500</td>
                     <td>USB 2.0</td>
                     <td>3-yr AE</td>
                     <td class="text-center">●</td>
@@ -268,14 +268,14 @@
                     <td>40 / 80</td>
                     <td>80</td>
                     <td>8.5 x 14</td>
-                    <td>8,500</td>
+                    <td>6,000</td>
                     <td>USB 2.0</td>
                     <td>3-yr AE</td>
                     <td class="text-center">-</td>
                     <td class="text-center">-</td>
                     <td class="text-center">-</td>
                     <td class="text-center text-amber-800 font-bold">PRO</td>
-                    <td class="text-center italic">Basic / AIPE</td>
+                    <td class="text-center italic">Basic</td>
                     <td class="text-center">●</td>
                 </tr>
                 <tr>
@@ -289,7 +289,7 @@
                     <td>60 / 120</td>
                     <td>90</td>
                     <td>8.5 x 14</td>
-                    <td>13,000</td>
+                    <td>7,500</td>
                     <td>USB 3.1</td>
                     <td>5-yr AE</td>
                     <td class="text-center">-</td>
@@ -306,18 +306,18 @@
                             <span class="product-model">DR-M1060 II</span>
                         </div>
                     </td>
-                    <td>9392B002</td>
+                    <td>6049C002</td>
                     <td>60 / 120</td>
                     <td>80</td>
                     <td>11.8 x 17</td>
-                    <td>13,000</td>
+                    <td>7,500</td>
                     <td>USB 2.0</td>
-                    <td>3-yr AE</td>
+                    <td>1-yr AE</td>
                     <td class="text-center">-</td>
                     <td class="text-center">-</td>
                     <td class="text-center">-</td>
                     <td class="text-center text-amber-800 font-bold">PRO</td>
-                    <td class="text-center italic">Basic / AIPE</td>
+                    <td class="text-center italic">Basic w/AIPE</td>
                     <td class="text-center">●</td>
                 </tr>
                 <tr>
@@ -331,7 +331,7 @@
                     <td>45 / 90</td>
                     <td>85</td>
                     <td>8.5 x 14</td>
-                    <td>8,500</td>
+                    <td>6,000</td>
                     <td>USB/Ethernet</td>
                     <td>1-yr AE</td>
                     <td class="text-center">-</td>
@@ -355,14 +355,14 @@
                     <td>90 / 180</td>
                     <td>300</td>
                     <td>12.2 x 17</td>
-                    <td>55,000</td>
+                    <td>30,000</td>
                     <td>USB 3.1</td>
                     <td>90-day OS</td>
                     <td class="text-center">-</td>
                     <td class="text-center">-</td>
                     <td class="text-center">-</td>
                     <td class="text-center text-red-800 font-bold">PRO</td>
-                    <td class="text-center italic">Pro (Win)</td>
+                    <td class="text-center italic">Professional</td>
                     <td class="text-center">●</td>
                 </tr>
                 <tr>
@@ -376,14 +376,14 @@
                     <td>110 / 220</td>
                     <td>500</td>
                     <td>12.2 x 17</td>
-                    <td>100,000</td>
+                    <td>50,000</td>
                     <td>USB 3/LAN</td>
                     <td>90-day OS</td>
                     <td class="text-center">-</td>
                     <td class="text-center">-</td>
                     <td class="text-center">-</td>
-                    <td class="text-center text-red-800 font-bold">PRO</td>
-                    <td class="text-center italic">Pro (Win)</td>
+                    <td class="text-center text-red-600 font-bold">PRO</td>
+                    <td class="text-center italic">Professional</td>
                     <td class="text-center">●</td>
                 </tr>
                 <tr>
@@ -397,14 +397,14 @@
                     <td>140 / 280</td>
                     <td>500</td>
                     <td>12.2 x 17</td>
-                    <td>100,000+</td>
+                    <td>70,000</td>
                     <td>USB 3/LAN</td>
                     <td>90-day OS</td>
                     <td class="text-center">-</td>
                     <td class="text-center">-</td>
                     <td class="text-center">-</td>
                     <td class="text-center text-red-800 font-bold">PRO</td>
-                    <td class="text-center italic">Pro (Win)</td>
+                    <td class="text-center italic">Professional</td>
                     <td class="text-center">●</td>
                 </tr>
                 <tr>
@@ -418,33 +418,33 @@
                     <td>130 / 260</td>
                     <td>500</td>
                     <td>12.2 x 17</td>
-                    <td>60,000+</td>
+                    <td>60,000</td>
                     <td>USB 2/SCSI</td>
                     <td>90-day OS</td>
                     <td class="text-center">-</td>
                     <td class="text-center">-</td>
                     <td class="text-center">-</td>
                     <td class="text-center text-red-800 font-bold">PRO</td>
-                    <td class="text-center italic">Pro (Win)</td>
+                    <td class="text-center italic">Professional</td>
                     <td class="text-center">●</td>
                 </tr>
             </tbody>
         </table>
 
         <!-- Footer -->
-        <div class="mt-2 p-2 bg-gray-50 rounded border border-gray-200 flex justify-between items-end">
+        <div class="mt-1.5 p-1.5 bg-gray-50 rounded border border-gray-200 flex justify-between items-end">
             <div>
-                <p class="text-[7px] font-extrabold uppercase text-gray-400 mb-1 tracking-tight">Capture OnTouch destinations available via free plug-ins</p>
-                <div class="flex gap-4">
-                    <span class="text-[7px] font-semibold text-gray-600">Dropbox</span>
-                    <span class="text-[7px] font-semibold text-gray-600">Google Drive</span>
-                    <span class="text-[7px] font-semibold text-gray-600">SharePoint</span>
-                    <span class="text-[7px] font-semibold text-gray-600">OneDrive</span>
-                    <span class="text-[7px] font-semibold text-gray-600">MS Word/Excel</span>
-                    <span class="text-[7px] font-semibold text-gray-600">FTP / Email</span>
+                <p class="text-[6.5px] font-extrabold uppercase text-gray-400 mb-0.5 tracking-tight leading-none">Capture OnTouch destinations available via free plug-ins</p>
+                <div class="flex gap-3">
+                    <span class="text-[6.5px] font-semibold text-gray-600">Dropbox</span>
+                    <span class="text-[6.5px] font-semibold text-gray-600">Google Drive</span>
+                    <span class="text-[6.5px] font-semibold text-gray-600">SharePoint</span>
+                    <span class="text-[6.5px] font-semibold text-gray-600">OneDrive</span>
+                    <span class="text-[6.5px] font-semibold text-gray-600">MS Word/Excel</span>
+                    <span class="text-[6.5px] font-semibold text-gray-600">FTP / Email</span>
                 </div>
             </div>
-            <div class="text-[6.5px] leading-tight text-gray-400 max-w-sm text-right">
+            <div class="text-[6px] leading-tight text-gray-400 max-w-sm text-right">
                 IMAGEFORMULA and SCANFRONT are registered trademarks of Canon Electronics. Inc. All other marks are trademarks of their respective owners. Pricing and specifications are subject to change without notice. Not responsible for typographical errors.
             </div>
         </div>
