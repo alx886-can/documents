@@ -21,7 +21,6 @@
         }
 
         /* CR-80 Standard Dimensions: 3.375" x 2.125" */
-        /* We use physical units (inches) to ensure the printer driver maps 1:1 */
         .card-container {
             width: 2.125in;
             height: 3.375in;
@@ -32,7 +31,6 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             display: flex;
             flex-direction: column;
-            /* Prevents pixel rounding issues on high-res printers */
             box-sizing: border-box;
         }
 
@@ -41,33 +39,26 @@
         }
 
         @media print {
-            html, body {
-                width: 2.125in;
-                height: 3.375in;
+            @page {
+                size: 2.125in 3.375in;
+                margin: 0;
+            }
+            body {
                 background: none;
                 padding: 0;
                 margin: 0;
+                display: block; /* Disable centering flex on print */
             }
             .card-container {
                 margin: 0;
                 box-shadow: none;
                 border: none;
+                position: relative; /* Maintain flow for page breaks */
+                display: flex;
                 page-break-after: always;
                 break-after: page;
-                /* Anchor to the physical card edge */
-                position: absolute;
-                top: 0;
-                left: 0;
             }
-            #back {
-                /* Reset for sequential pages */
-                position: relative; 
-            }
-            @page {
-                /* Explicitly define card size for IX-R7000 driver */
-                size: 2.125in 3.375in;
-                margin: 0;
-            }
+            /* Hide the back card from the first page and front from second is handled by flow + page-break */
         }
     </style>
 </head>
