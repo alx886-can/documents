@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canon imageFORMULA x Central 1 Flyer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Roboto', 'sans-serif'] },
+                    colors: {
+                        canonRed: '#CC0000',
+                        techSlate: '#1A1A1A',
+                        printGrey: '#E2E8F0', /* Darker grey for better print visibility */
+                        borderGrey: '#94A3B8'  /* Stronger border color for print */
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @page { size: letter; margin: 0; }
+        body { width: 8.5in; height: 11in; margin: 0; padding: 0; -webkit-print-color-adjust: exact; }
+        .print-container { width: 8.5in; height: 11in; position: relative; overflow: hidden; background: white; display: flex; flex-direction: column; }
+        
+        /* Reinforced borders for print visibility */
+        .bento-item { 
+            background: #FFFFFF; 
+            border-radius: 12px; 
+            border: 2px solid #CBD5E1; 
+            padding: 1.25rem; 
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        /* Darkened background to ensure it shows up in print */
+        .hero-gradient { 
+            background: radial-gradient(circle at 50% 50%, #f8fafc 0%, #E2E8F0 100%); 
+        }
+        
+        .divider { height: 4px; width: 60px; background: #CC0000; margin-top: 1rem; }
+        
+        /* Stronger vertical separators */
+        .product-separator {
+            border-left: 2px solid #CBD5E1;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-techSlate">
+
+    <!-- Chosen Palette: Canon Enterprise Tech (Reinforced for Print) -->
+    <!-- Application Structure Plan: High-authority header followed by a high-contrast product gallery and detailed technical advantage grid. Structure optimized for physical legibility. -->
+    <!-- Visualization & Content Choices: Product Lineup -> Compare -> 5-Column Grid -> Individual sub-text -> Clear visual hierarchy. No SVG used. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+
+    <div class="print-container">
+        
+        <!-- HEADER SECTION -->
+        <header class="pt-14 px-12 pb-10">
+            <div class="flex justify-between items-start">
+                <div class="max-w-2xl">
+                    <img src="https://i.ibb.co/n80W70Ym/image-FORMULA2.png" alt="imageFORMULA" class="h-11 mb-6">
+                    <h1 class="text-5xl font-black tracking-tighter uppercase leading-[0.9] text-techSlate">
+                        Unrivaled Accuracy. <br>
+                        <span class="text-canonRed">Unmatched Reliability.</span>
+                    </h1>
+                    <div class="divider"></div>
+                    <p class="text-lg font-light tracking-[0.15em] text-slate-500 uppercase mt-4">
+                        The Ultimate Transport Lineup for Canadian Credit Unions
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <!-- COMPLETE LINEUP - 5 PRODUCTS WITH DARKER BACKGROUND -->
+        <section class="hero-gradient py-10 px-6 border-y-2 border-slate-300">
+            <div class="flex justify-center gap-0">
+                
+                <!-- CR-L1 -->
+                <div class="w-[18%] text-center px-1">
+                    <img src="https://www.canon.ca/dam/products/BUSINESS-UNIT/ISG/Scanners/Cheque/CR-L1/Canon_iF-CR-L1_Side_580x580.png" 
+                         alt="CR-L1" class="h-28 mx-auto drop-shadow-xl mb-4">
+                    <h3 class="text-xs font-black text-techSlate">CR-L1</h3>
+                    <p class="text-[8px] text-canonRed font-black uppercase tracking-widest mt-1">Central 1 Certified</p>
+                </div>
+
+                <!-- CR-120 -->
+                <div class="w-[18%] text-center px-1 product-separator">
+                    <img src="https://www.canon.ca/dam/products/BUSINESS-UNIT/ISG/Scanners/Cheque/CR-120-CR-150/Canon_iF-CR-120-CR-150_Side_580x580.png" 
+                         alt="CR-120" class="h-28 mx-auto drop-shadow-xl mb-4">
+                    <h3 class="text-xs font-black text-techSlate">CR-120</h3>
+                    <p class="text-[8px] text-canonRed font-black uppercase tracking-widest mt-1">Central 1 Certified</p>
+                </div>
+
+                <!-- CR-120N -->
+                <div class="w-[18%] text-center px-1 product-separator">
+                    <img src="https://www.canon.ca/dam/products/BUSINESS-UNIT/ITCG/Scanners/CR-120N/CR-120N_1--1--PhotoRoom.png-PhotoRoom500px.png" 
+                         alt="CR-120N" class="h-28 mx-auto drop-shadow-xl mb-4">
+                    <h3 class="text-xs font-black text-techSlate">CR-120N</h3>
+                    <p class="text-[8px] text-canonRed font-black uppercase tracking-widest mt-1">Central 1 Certified</p>
+                </div>
+
+                <!-- CR-150 -->
+                <div class="w-[18%] text-center px-1 product-separator">
+                    <img src="https://www.canon.ca/dam/products/BUSINESS-UNIT/ISG/Scanners/Cheque/CR-120-CR-150/Canon_iF-CR-120-CR-150_Side_580x580.png" 
+                         alt="CR-150" class="h-28 mx-auto drop-shadow-xl mb-4">
+                    <h3 class="text-xs font-black text-techSlate">CR-150</h3>
+                    <p class="text-[8px] text-canonRed font-black uppercase tracking-widest mt-1">Central 1 Certified</p>
+                </div>
+
+                <!-- CR-190i II -->
+                <div class="w-[18%] text-center px-1 product-separator">
+                    <img src="https://www.canon.ca/dam/products/BUSINESS-UNIT/ISG/Scanners/Cheque/CR-190i-II/Canon_iF-CR-190i-II_Thumbnail_230x230.png" 
+                         alt="CR-190i II" class="h-28 mx-auto drop-shadow-xl mb-4">
+                    <h3 class="text-xs font-black text-techSlate">CR-190i II</h3>
+                    <p class="text-[8px] text-canonRed font-black uppercase tracking-widest mt-1">Central 1 Certified</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- STRATEGIC ADVANTAGES WITH REINFORCED BORDERS -->
+        <section class="px-12 flex-1 flex flex-col justify-center gap-6 py-6">
+            <div class="grid grid-cols-2 gap-6">
+                <!-- Accuracy -->
+                <div class="bento-item">
+                    <h3 class="text-xs font-black uppercase tracking-[0.2em] mb-3 text-canonRed">Read Rates</h3>
+                    <p class="text-[11px] leading-relaxed text-slate-700 font-medium">
+                        Stop wasting time on exceptions. Our proprietary MICR reading technology delivers high-fidelity capture on the first pass, even on worn items where legacy alternatives require constant manual correction.
+                    </p>
+                </div>
+
+                <!-- Reliability -->
+                <div class="bento-item">
+                    <h3 class="text-xs font-black uppercase tracking-[0.2em] mb-3 text-canonRed">Engineering</h3>
+                    <p class="text-[11px] leading-relaxed text-slate-700 font-medium">
+                        Legacy transports are often plagued by flimsy plastic components. Canon builds for endurance, utilizing heavy-duty separation rollers designed to eliminate double-feeds and maintenance downtime.
+                    </p>
+                </div>
+
+                <!-- Security -->
+                <div class="bento-item">
+                    <h3 class="text-xs font-black uppercase tracking-[0.2em] mb-3 text-canonRed">Fraud Prevention</h3>
+                    <p class="text-[11px] leading-relaxed text-slate-700 font-medium">
+                        Secure your workflow at the point of capture. With optional integrated UV sensors, our transport hardware acts as a front-line defense against fraudulent items before they entry the clearing cycle.
+                    </p>
+                </div>
+
+                <!-- Integration -->
+                <div class="bento-item bg-techSlate text-white border-none shadow-xl">
+                    <h3 class="text-xs font-black uppercase tracking-[0.2em] mb-3 opacity-90 text-white">Seamless Integration</h3>
+                    <p class="text-[11px] leading-relaxed text-slate-300 italic">
+                        Canon hardware provides a zero-friction experience for teller-side scanning and RDC. Explicit certification for the Central 1 platform ensures your IT team spends zero time on configuration.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER WITH REINFORCED ELEMENTS -->
+        <footer class="bg-white border-t-2 border-slate-200 p-12 pt-8 pb-10">
+            <div class="flex justify-between items-center mb-8">
+                <img src="https://i.ibb.co/hFypK2Zn/Canon-Logo-2.png" alt="Canon" class="h-10">
+                <div class="text-right">
+                    <p class="text-xs font-black uppercase tracking-widest text-techSlate">Digital Solutions Portfolio</p>
+                    <p class="text-xs text-canonRed font-black">www.canon.ca/en/products/Scanners</p>
+                </div>
+            </div>
+
+            <!-- CENTERED QR SECTION -->
+            <div class="flex flex-col items-center justify-center">
+                <div class="bg-techSlate p-3 rounded-2xl shadow-xl flex items-center gap-6">
+                    <div class="w-20 h-20 bg-white rounded-lg p-1">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.canon.ca/en/products/Scanners/Cheque" alt="QR Code" class="w-full h-full">
+                    </div>
+                    <div class="pr-6">
+                        <p class="text-white font-black text-xs uppercase tracking-[0.2em]">Explore Technical Specs</p>
+                        <p class="text-slate-400 text-[9px] uppercase tracking-widest mt-1">Scan for Full Canada Lineup</p>
+                    </div>
+                </div>
+                <p class="text-[9px] text-slate-400 uppercase tracking-[0.4em] font-bold mt-8">© 2024 Canon Canada Inc. | All Rights Reserved</p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>

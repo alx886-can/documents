@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imageFORMULA 2026 Line Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        @page {
+            size: letter landscape;
+            margin: 0.15in;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            -webkit-print-color-adjust: exact;
+        }
+        .print-container {
+            width: 10.7in;
+            margin: 0 auto;
+            position: relative;
+        }
+        .canon-red { color: #CC0000; }
+        
+        table { border-collapse: collapse; width: 100%; font-size: 8.2px; line-height: 1.1; }
+        th { 
+            background-color: #f3f4f6; 
+            font-weight: 800; 
+            text-transform: uppercase; 
+            letter-spacing: 0.01em;
+            border-bottom: 2px solid #1a1a1a;
+            padding: 4px 1px;
+            text-align: left;
+            color: #4b5563;
+        }
+        td { 
+            border-bottom: 1px solid #e5e7eb; 
+            padding: 2px 1px; 
+            vertical-align: middle;
+        }
+        .category-header {
+            color: white;
+            font-weight: 800;
+            text-transform: uppercase;
+            padding: 4px 8px;
+            font-size: 9px;
+        }
+        .category-personal { background-color: #1e40af; }
+        .category-workgroup { background-color: #065f46; }
+        .category-departmental { background-color: #92400e; }
+        .category-production { background-color: #CC0000; }
+
+        .product-model { font-weight: 800; color: #1a1a1a; font-size: 9px; }
+        .product-img { width: 36px; height: auto; object-fit: contain; }
+        
+        @media print {
+            body { background: white; margin: 0; padding: 0; }
+        }
+
+        .header-bento {
+            border-bottom: 3px solid #CC0000;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body class="p-1">
+
+    <div class="print-container">
+        <!-- Brand Header -->
+        <header class="header-bento flex justify-between items-center pb-2">
+            <div class="flex items-center gap-4">
+                <img src="https://i.ibb.co/hFypK2Zn/Canon-Logo-2.png" alt="Canon Logo" class="h-6">
+                <div class="h-6 w-px bg-gray-300"></div>
+                <img src="https://i.ibb.co/svcfqT91/image-FORMULA2.png" alt="imageFORMULA Logo" class="h-4">
+            </div>
+            <div class="text-right">
+                <p class="text-[8px] font-bold text-gray-400 tracking-widest uppercase">Document Scanner Line Card</p>
+                <p class="text-[9px] font-black italic">CURRENT AS OF: MAY 14, 2026</p>
+            </div>
+        </header>
+
+        <!-- Data Grid -->
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 15%;">Product Series</th>
+                    <th style="width: 8%;">Canon SKU</th>
+                    <th style="width: 7%;">Speed (ppm)</th>
+                    <th style="width: 6%;">ADF Cap.</th>
+                    <th style="width: 8%;">Max Page</th>
+                    <th style="width: 8%;">Daily Vol.</th>
+                    <th style="width: 10%;">Interface</th>
+                    <th style="width: 8%;">Warranty</th>
+                    <th style="width: 4%;" class="text-center">STD</th>
+                    <th style="width: 4%;" class="text-center">Lite</th>
+                    <th style="width: 4%;" class="text-center">Web</th>
+                    <th style="width: 4%;" class="text-center">PRO</th>
+                    <th style="width: 9%;" class="text-center">Kofax VRS</th>
+                    <th style="width: 5%;" class="text-center">TWAIN/ISIS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- PERSONAL -->
+                <tr><td colspan="14" class="category-header category-personal">Personal</td></tr>
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-2">
+                            <img src="https://www.canon.ca/dam/products/BUSINESS-UNIT/ISG/Scanners/Personal---Workgroup/P-208II/Canon_iF-P208II_Thumbnail_230x230.png" class="product-img" alt="P-208 II">
+                            <span class="product-model">P-208 II</span>
+                        </div>
+                    </td>
+                    <td>9704B007</td>
+                    <td>8 / 16</td>
+                    <td>10</td>
+                    <td>8.5 x 14</td>
+                    <td>250</td>
+                    <td>USB 2.0</td>
+                    <td>1-yr AE</td>
+                    <td class="text-center">●</td>
+                    <td class="text-center text-blue-800 font-bold">LITE</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center text-gray-400">-</td>
+                    <td class="text-center">●</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-2">
+                            <img src="https://www.canon.ca/dam/products/BUSINESS-UNIT/ISG/Scanners/Personal---Workgroup/DR-P215II/Canon_iF-P215II_Thumbnail_230x230.png" class="product-img" alt="P-215 II">
+                            <span class="product-model">P-215 II</span>
+                        </div>
+                    </td>
+                    <td>9705B007</td>
+                    <td>15 / 30</td>
+                    <td>20</td>
+                    <td>8.5 x 14</td>
+                    <td>700</td>
+                    <td>USB 2.0/3.0</td>
+                    <td>1-yr AE</td>
+                    <td class="text-center">●</td>
+                    <td class="text-center text-blue-800 font-bold">LITE</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center text-gray-400">-</td>
+                    <td class="text-center">●</td>
+                </tr>
+
+                <!-- DESKTOP / WORKGROUP -->
+                <tr><td colspan="14" class="category-header category-workgroup">Desktop / Workgroup</td></tr>
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-2">
+                            <img src="https://www.canon.ca/dam/products/BUSINESS-UNIT/ISG/Scanners/Personal---Workgroup/DR-C225-II/Canon_iF-DR-C225-II_Side_V3_580x580.png" class="product-img" alt="DR-C225 II">
+                            <span class="product-model">DR-C225 II</span>
+                        </div>
+                    </td>
+                    <td>3258C002</td>
+                    <td>25 / 50</td>
+                    <td>30</td>
+                    <td>8.5 x 14</td>
+                    <td>2,500</td>
+                    <td>USB 2.0</td>
+                    <td>3-yr AE</td>
+                    <td class="text-center">●</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">Opt.</td>
+                    <td class="text-center text-gray-400">-</td>
+                    <td class="text-center">●</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-2">
+                            <img src="https://www.canon.ca/dam/products/BUSINESS-UNIT/ISG/Scanners/Personal---Workgroup/DR-C340/CB_001.png" class="product-img" alt="DR-C340">
+                            <span class="product-model">DR-C340</span>
+                        </div>
+                    </td>
+                    <td>7291C002</td>
+                    <td>40 / 80</td>
+                    <td>100</td>
+                    <td>8.5 x 14</td>
+                    <td>7,000</td>
+                    <td>USB-C 2.0</td>
+                    <td>3-yr AE</td>
+                    <td class="text-center">●</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center text-emerald-800 font-bold">PRO</td>
+                    <td class="text-center text-gray-400">-</td>
+                    <td class="text-center">●</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-2">
+                            <img src="https://www.canon.ca/dam/products/BUSINESS-UNIT/ISG/Scanners/Personal---Workgroup/DR-C350/CA_001.png" class="product-img" alt="DR-C350">
+                            <span class="product-model">DR-C350</span>
+                        </div>
+                    </td>
+                    <td>7290C002</td>
+                    <td>50 / 100</td>
+                    <td>100</td>
+                    <td>8.5 x 14</td>
+                    <td>8,000</td>
+                    <td>USB-C 2.0</td>
+                    <td>3-yr AE</td>
+                    <td class="text-center">●</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center text-emerald-800 font-bold">PRO</td>
+                    <td class="text-center text-gray-400">-</td>
+                    <td class="text-center">●</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-2">
+                            <img src="https://www.canon.ca/dam/products/BUSINESS-UNIT/ISG/Scanners/Personal---Workgroup/DR-S250N/DR-S250N-Front-V2.png" class="product-img" alt="DR-S250N">
+                            <span class="product-model">DR-S250N</span>
+                        </div>
+                    </td>
+                    <td>6383C002</td>
+                    <td>50 / 100</td>
+                    <td>60</td>
+                    <td>8.5 x 14</td>
+                    <td>6,000</td>
+                    <td>USB 3.2/LAN</td>
+                    <td>3-yr AE</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">●</td>
+                    <td class="text-center text-emerald-800 font-bold">PRO</td>
+                    <td class="text-center text-gray-400">-</td>
+                    <td class="text-center">●</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-2">
+                            <img src="https://www.canon.ca/dam/products/BUSINESS-UNIT/ITCG/Scanners/imageFORMULA-DR-S350NW/imageFORMULA-DR-S350NW-1.png" class="product-img" alt="DR-S350NW">
+                            <span class="product-model">DR-S350NW</span>
+                        </div>
+                    </td>
+                    <td>6897C002</td>
+                    <td>50 / 100</td>
+                    <td>60</td>
+                    <td>8.5 x 14</td>
+                    <td>9,000</td>
+                    <td>USB 3/LAN/WiFi</td>
+                    <td>3-yr AE</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">●</td>
+                    <td class="text-center text-emerald-800 font-bold">PRO</td>
+                    <td class="text-center text-gray-400">-</td>
+                    <td class="text-center">●</td>
+                </tr>
+
+                <!-- DEPARTMENTAL -->
+                <tr><td colspan="14" class="category-header category-departmental">Departmental</td></tr>
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-2">
+                            <img src="https://www.canon.ca/dam/products/BUSINESS-UNIT/ISG/Scanners/Departmental---Production/DR-M140II/DR-M140II-front.png" class="product-img" alt="DR-M140 II">
+                            <span class="product-model">DR-M140 II</span>
+                        </div>
+                    </td>
+                    <td>6050C002</td>
+                    <td>40 / 80</td>
+                    <td>80</td>
+                    <td>8.5 x 14</td>
+                    <td>8,500</td>
+                    <td>USB 2.0</td>
+                    <td>3-yr AE</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center text-amber-800 font-bold">PRO</td>
+                    <td class="text-center italic">Basic / AIPE</td>
+                    <td class="text-center">●</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-2">
+                            <img src="https://www.canon.ca/dam/products/BUSINESS-UNIT/ISG/Scanners/Departmental---Production/DR-M260/Canon_iF-DR-M260-Thumbnail_580X580.png" class="product-img" alt="DR-M260">
+                            <span class="product-model">DR-M260</span>
+                        </div>
+                    </td>
+                    <td>2405C002</td>
+                    <td>60 / 120</td>
+                    <td>90</td>
+                    <td>8.5 x 14</td>
+                    <td>13,000</td>
+                    <td>USB 3.1</td>
+                    <td>5-yr AE</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center text-amber-800 font-bold">PRO</td>
+                    <td class="text-center italic font-semibold">Professional</td>
+                    <td class="text-center">●</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-2">
+                            <img src="https://www.canon.ca/dam/products/BUSINESS-UNIT/ISG/Scanners/Departmental---Production/DR-M1060II/DR-M1060II-front.png" class="product-img" alt="DR-M1060 II">
+                            <span class="product-model">DR-M1060 II</span>
+                        </div>
+                    </td>
+                    <td>9392B002</td>
+                    <td>60 / 120</td>
+                    <td>80</td>
+                    <td>11.8 x 17</td>
+                    <td>13,000</td>
+                    <td>USB 2.0</td>
+                    <td>3-yr AE</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center text-amber-800 font-bold">PRO</td>
+                    <td class="text-center italic">Basic / AIPE</td>
+                    <td class="text-center">●</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-2">
+                            <img src="https://www.canon.ca/dam/products/BUSINESS-UNIT/ISG/Scanners/Personal---Workgroup/Scanfront-400/Canon_iF-ScanFront400_Thumbnail_580x580.png" class="product-img" alt="ScanFront 400">
+                            <span class="product-model">ScanFront 400</span>
+                        </div>
+                    </td>
+                    <td>1255C002</td>
+                    <td>45 / 90</td>
+                    <td>85</td>
+                    <td>8.5 x 14</td>
+                    <td>8,500</td>
+                    <td>USB/Ethernet</td>
+                    <td>1-yr AE</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center text-gray-400">-</td>
+                    <td class="text-center text-gray-400">-</td>
+                </tr>
+
+                <!-- PRODUCTION -->
+                <tr><td colspan="14" class="category-header category-production">Production</td></tr>
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-2">
+                            <img src="https://www.canon.ca/dam/products/BUSINESS-UNIT/ISG/Scanners/Departmental---Production/DR-G2110/Canon_iF-DR-G2110_Thumbnail_580x580.png" class="product-img" alt="DR-G2090">
+                            <span class="product-model">DR-G2090 USB</span>
+                        </div>
+                    </td>
+                    <td>3151C002</td>
+                    <td>90 / 180</td>
+                    <td>300</td>
+                    <td>12.2 x 17</td>
+                    <td>55,000</td>
+                    <td>USB 3.1</td>
+                    <td>90-day OS</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center text-red-800 font-bold">PRO</td>
+                    <td class="text-center italic">Pro (Win)</td>
+                    <td class="text-center">●</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-2">
+                            <img src="https://www.canon.ca/dam/products/BUSINESS-UNIT/ISG/Scanners/Departmental---Production/DR-G2110/Canon_iF-DR-G2110_Thumbnail_580x580.png" class="product-img" alt="DR-G2110">
+                            <span class="product-model">DR-G2110</span>
+                        </div>
+                    </td>
+                    <td>3150C002</td>
+                    <td>110 / 220</td>
+                    <td>500</td>
+                    <td>12.2 x 17</td>
+                    <td>100,000</td>
+                    <td>USB 3/LAN</td>
+                    <td>90-day OS</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center text-red-800 font-bold">PRO</td>
+                    <td class="text-center italic">Pro (Win)</td>
+                    <td class="text-center">●</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-2">
+                            <img src="https://www.canon.ca/dam/products/BUSINESS-UNIT/ISG/Scanners/Departmental---Production/DR-G2110/Canon_iF-DR-G2110_Thumbnail_580x580.png" class="product-img" alt="DR-G2140">
+                            <span class="product-model">DR-G2140</span>
+                        </div>
+                    </td>
+                    <td>3149C002</td>
+                    <td>140 / 280</td>
+                    <td>500</td>
+                    <td>12.2 x 17</td>
+                    <td>100,000+</td>
+                    <td>USB 3/LAN</td>
+                    <td>90-day OS</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center text-red-800 font-bold">PRO</td>
+                    <td class="text-center italic">Pro (Win)</td>
+                    <td class="text-center">●</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-2">
+                            <img src="https://www.canon.ca/dam/products/BUSINESS-UNIT/ISG/Scanners/Departmental---Production/DR-X10CII/Canon_iF-DR-X10C-II_Thumbnail_230x230.png" class="product-img" alt="DR-X10C II">
+                            <span class="product-model">DR-X10C II</span>
+                        </div>
+                    </td>
+                    <td>2260C001</td>
+                    <td>130 / 260</td>
+                    <td>500</td>
+                    <td>12.2 x 17</td>
+                    <td>60,000+</td>
+                    <td>USB 2/SCSI</td>
+                    <td>90-day OS</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center text-red-800 font-bold">PRO</td>
+                    <td class="text-center italic">Pro (Win)</td>
+                    <td class="text-center">●</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Footer -->
+        <div class="mt-2 p-2 bg-gray-50 rounded border border-gray-200 flex justify-between items-end">
+            <div>
+                <p class="text-[7px] font-extrabold uppercase text-gray-400 mb-1 tracking-tight">Capture OnTouch destinations available via free plug-ins</p>
+                <div class="flex gap-4">
+                    <span class="text-[7px] font-semibold text-gray-600">Dropbox</span>
+                    <span class="text-[7px] font-semibold text-gray-600">Google Drive</span>
+                    <span class="text-[7px] font-semibold text-gray-600">SharePoint</span>
+                    <span class="text-[7px] font-semibold text-gray-600">OneDrive</span>
+                    <span class="text-[7px] font-semibold text-gray-600">MS Word/Excel</span>
+                    <span class="text-[7px] font-semibold text-gray-600">FTP / Email</span>
+                </div>
+            </div>
+            <div class="text-[6.5px] leading-tight text-gray-400 max-w-sm text-right">
+                IMAGEFORMULA and SCANFRONT are registered trademarks of Canon Electronics. Inc. All other marks are trademarks of their respective owners. Pricing and specifications are subject to change without notice. Not responsible for typographical errors.
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

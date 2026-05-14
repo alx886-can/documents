@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canon imageFORMULA Production Scanner Flyer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Roboto', 'sans-serif'] },
+                    colors: {
+                        canonRed: '#CC0000',
+                        techSlate: '#1A1A1A',
+                        blueprintGrey: '#F1F5F9',
+                        darkPrint: '#334155'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @page { size: letter; margin: 0; }
+        body { width: 8.5in; height: 11in; margin: 0; padding: 0; -webkit-print-color-adjust: exact; background: #FFF; }
+        .print-container { width: 8.5in; height: 11in; position: relative; overflow: hidden; display: flex; flex-direction: column; }
+        
+        /* Side Accent Bar */
+        .side-accent { position: absolute; left: 0; top: 0; bottom: 0; width: 0.5in; background: #CC0000; z-index: 10; }
+        
+        /* Product Background Section */
+        .product-section { background: #CBD5E1; border-bottom: 4px solid #1A1A1A; position: relative; overflow: hidden; }
+        
+        .speed-badge {
+            background: #1A1A1A;
+            color: white;
+            padding: 2px 8px;
+            font-weight: 900;
+            font-size: 10px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 4px;
+        }
+
+        .solution-card {
+            border-left: 5px solid #CC0000;
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Vertical text now strictly inside the product section */
+        .vertical-text {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            font-weight: 900;
+            letter-spacing: 0.5em;
+            opacity: 0.15;
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%) rotate(180deg);
+            font-size: 4rem;
+            pointer-events: none;
+        }
+
+        .product-separator {
+            border-left: 2px solid #64748B;
+        }
+        
+        /* High Prominence Partner Logos */
+        .partner-logo {
+            max-height: 50px;
+            max-width: 140px;
+            width: auto;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-techSlate">
+
+    <div class="print-container">
+        <!-- Sidebar Branding -->
+        <div class="side-accent"></div>
+
+        <!-- HEADER AREA -->
+        <header class="pt-12 pl-[0.8in] pr-12 pb-6 flex justify-between items-start flex-none">
+            <div class="z-20">
+                <img src="https://i.ibb.co/n80W70Ym/image-FORMULA2.png" alt="imageFORMULA" class="h-10 mb-4">
+                <h1 class="text-5xl font-black tracking-tighter uppercase leading-none">
+                    Production <span class="text-canonRed">Digitization</span>
+                </h1>
+                <p class="text-xl font-bold tracking-[0.1em] text-slate-500 uppercase mt-4">
+                    High-Volume Performance. Enterprise Scalability.
+                </p>
+            </div>
+        </header>
+
+        <!-- PRODUCT SHOWCASE -->
+        <section class="product-section ml-[0.5in] flex-none py-10 px-8">
+            <span class="vertical-text">PRODUCTION</span>
+            
+            <div class="grid grid-cols-2 gap-y-12 gap-x-8 relative z-20">
+                <div class="flex items-center gap-4">
+                    <img src="https://www.canon.ca/dam/products/BUSINESS-UNIT/ISG/Scanners/Departmental---Production/DR-G2090/Canon_iF-DR-G2090_Side_580x580.png" 
+                         alt="DR-G2090" class="h-32 drop-shadow-2xl">
+                    <div>
+                        <span class="speed-badge">90 PPM</span>
+                        <h3 class="text-lg font-black text-techSlate leading-tight">DR-G2090</h3>
+                        <p class="text-[10px] text-slate-700 font-bold uppercase tracking-tight">Entry Level Production</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4 product-separator pl-4">
+                    <img src="https://www.canon.ca/dam/products/BUSINESS-UNIT/ISG/Scanners/Departmental---Production/DR-G2110/Canon_iF-DR-G2110_Side_580x580.png" 
+                         alt="DR-G2110" class="h-32 drop-shadow-2xl">
+                    <div>
+                        <span class="speed-badge">110 PPM</span>
+                        <h3 class="text-lg font-black text-techSlate leading-tight">DR-G2110</h3>
+                        <p class="text-[10px] text-slate-700 font-bold uppercase tracking-tight">Enterprise Speed</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <img src="https://www.canon.ca/dam/products/BUSINESS-UNIT/ISG/Scanners/Departmental---Production/DR-G2110/Canon_iF-DR-G2110_Thumbnail_580x580.png" 
+                         alt="DR-G2140" class="h-32 drop-shadow-2xl">
+                    <div>
+                        <span class="speed-badge">140 PPM</span>
+                        <h3 class="text-lg font-black text-techSlate leading-tight">DR-G2140</h3>
+                        <p class="text-[10px] text-slate-700 font-bold uppercase tracking-tight">Ultimate Throughput</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4 product-separator pl-4">
+                    <img src="https://www.canon.ca/dam/products/BUSINESS-UNIT/ISG/Scanners/Departmental---Production/DR-X10CII/Canon_iF-DR-X10CII_Side_580x580.png" 
+                         alt="DR-X10C II" class="h-32 drop-shadow-2xl">
+                    <div>
+                        <span class="speed-badge">MISSION CRITICAL</span>
+                        <h3 class="text-lg font-black text-techSlate leading-tight uppercase">DR-X10C II</h3>
+                        <p class="text-[10px] text-slate-700 font-bold uppercase tracking-tight">Exceptional Image Quality</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HIGHLIGHTS & ECOSYSTEM AREA -->
+        <section class="ml-[0.5in] p-12 grid grid-cols-12 gap-12 flex-1 items-start">
+            <!-- Left Side: Technical Highlights -->
+            <div class="col-span-6">
+                <h2 class="text-xs font-black uppercase tracking-[0.3em] text-canonRed mb-6">Technical Highlights</h2>
+                
+                <div class="space-y-4">
+                    <div class="solution-card">
+                        <h4 class="text-sm font-black uppercase mb-1 text-techSlate">Zero-Prep Batch Processing</h4>
+                        <p class="text-[11px] text-slate-600 leading-relaxed font-bold">
+                            Advanced ultrasonic sensors and active torque control allow for uninterrupted scanning of mixed batches without manual sorting.
+                        </p>
+                    </div>
+
+                    <div class="solution-card">
+                        <h4 class="text-sm font-black uppercase mb-1 text-techSlate">Onboard Image Optimization</h4>
+                        <p class="text-[11px] text-slate-600 leading-relaxed font-bold">
+                            Hardware-side deskew and background smoothing ensure 99%+ OCR accuracy for mission-critical automated data extraction.
+                        </p>
+                    </div>
+
+                    <div class="solution-card">
+                        <h4 class="text-sm font-black uppercase mb-1 text-techSlate">Intelligent Sonic Protection</h4>
+                        <p class="text-[11px] text-slate-600 leading-relaxed font-bold">
+                            iSOP technology "listens" for paper crumpling and stops immediately to protect fragile original documents from damage.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Partner Ecosystem - Prominent Logos -->
+            <div class="col-span-6">
+                <h2 class="text-xs font-black uppercase tracking-[0.3em] text-techSlate mb-8 border-b-2 border-slate-100 pb-2">Advanced Solutions Ecosystem</h2>
+                <div class="grid grid-cols-2 gap-y-12 gap-x-8 items-center justify-items-center">
+                    <!-- Remark -->
+                    <img src="https://i.ibb.co/bj3pD2jR/Remark.png" alt="Remark Office OMR" class="partner-logo">
+                    <!-- PowerScan -->
+                    <img src="https://i.ibb.co/mVWCVCvv/Power-Scan.png" alt="IRIS Powerscan" class="partner-logo">
+                    <!-- Kofax -->
+                    <img src="https://i.ibb.co/zWgX9PRj/Kofax.png" alt="Kofax Capture" class="partner-logo">
+                    <!-- Therefore -->
+                    <img src="https://i.ibb.co/M5hqYTxC/Therefore.png" alt="Therefore" class="partner-logo">
+                    <!-- Artsyl -->
+                    <img src="https://i.ibb.co/d4fRW9jF/Artsyl.png" alt="Artsyl" class="partner-logo">
+                    <!-- Xtract -->
+                    <img src="https://i.ibb.co/MDRvDVbr/Xtract.png" alt="IRISXtract" class="partner-logo">
+                </div>
+                <div class="mt-12 text-center">
+                    <p class="text-[9px] leading-tight text-slate-400 font-black uppercase tracking-widest">ISIS / TWAIN Certified Drivers Included</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPLIANT WHITE FOOTER - MOVED UP FOR PRINT SAFETY -->
+        <footer class="ml-[0.5in] px-12 pt-2 pb-16 bg-white flex-none">
+            <div class="flex justify-between items-end w-full mb-6">
+                <!-- BOTTOM LEFT: Compliant Wordmark -->
+                <div class="space-y-2">
+                    <img src="https://i.ibb.co/hFypK2Zn/Canon-Logo-2.png" alt="Canon" class="h-10">
+                    <p class="text-canonRed text-[10px] font-black tracking-wider uppercase">www.canon.ca/en/products/Scanners</p>
+                </div>
+                <!-- BOTTOM RIGHT: Copyright -->
+                <div class="text-right">
+                    <p class="text-[10px] text-slate-500 uppercase tracking-[0.3em] font-black">© 2024 Canon Canada Inc.</p>
+                </div>
+            </div>
+
+            <!-- CENTERED QR FOR SCANNING -->
+            <div class="flex flex-col items-center justify-center">
+                <div class="bg-techSlate p-2.5 rounded-2xl shadow-xl flex items-center gap-5">
+                    <div class="w-16 h-16 bg-white rounded-xl p-1">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.canon.ca/en/products/Scanners" alt="QR Code" class="w-full h-full">
+                    </div>
+                    <div class="pr-5">
+                        <p class="text-white font-black text-[10px] uppercase tracking-[0.2em]">Digitize Your Enterprise</p>
+                        <p class="text-slate-400 text-[8px] uppercase tracking-widest mt-1">Scan for Production Tech Specs</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
