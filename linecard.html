@@ -9,7 +9,7 @@
     <style>
         @page {
             size: letter landscape;
-            margin: 0.3in; /* Increased for safer printing */
+            margin: 0.3in; 
         }
         body {
             font-family: 'Inter', sans-serif;
@@ -18,7 +18,7 @@
             -webkit-print-color-adjust: exact;
         }
         .print-container {
-            width: 10.4in; /* Adjusted for wider margins */
+            width: 10.4in;
             margin: 0 auto;
             position: relative;
         }
@@ -31,13 +31,14 @@
             text-transform: uppercase; 
             letter-spacing: 0.01em;
             border-bottom: 1.5px solid #1a1a1a;
-            padding: 3px 1px;
+            padding: 2px 1px;
             text-align: left;
             color: #4b5563;
+            vertical-align: middle;
         }
         td { 
             border-bottom: 1px solid #e5e7eb; 
-            padding: 1px 1px; /* Tighter vertical spacing */
+            padding: 1px 1px;
             vertical-align: middle;
         }
         .category-header {
@@ -63,6 +64,12 @@
             border-bottom: 2px solid #CC0000;
             margin-bottom: 4px;
         }
+        .software-group-header {
+            background-color: #e5e7eb;
+            border-bottom: 1px solid #9ca3af !important;
+            font-size: 7px;
+            text-align: center;
+        }
     </style>
 </head>
 <body class="p-0">
@@ -85,20 +92,23 @@
         <table>
             <thead>
                 <tr>
-                    <th style="width: 15%;">Product Series</th>
-                    <th style="width: 8%;">Canon SKU</th>
-                    <th style="width: 7%;">Speed (ppm)</th>
-                    <th style="width: 6%;">ADF Cap.</th>
-                    <th style="width: 8%;">Max Page</th>
-                    <th style="width: 8%;">Daily Vol.</th>
-                    <th style="width: 10%;">Interface</th>
-                    <th style="width: 8%;">Warranty</th>
+                    <th rowspan="2" style="width: 15%;">Product Series</th>
+                    <th rowspan="2" style="width: 8%;">Canon SKU</th>
+                    <th rowspan="2" style="width: 7%;">Speed (ppm)</th>
+                    <th rowspan="2" style="width: 6%;">ADF Cap.</th>
+                    <th rowspan="2" style="width: 8%;">Max Page</th>
+                    <th rowspan="2" style="width: 8%;">Daily Vol.</th>
+                    <th rowspan="2" style="width: 10%;">Interface</th>
+                    <th rowspan="2" style="width: 8%;">Warranty</th>
+                    <th colspan="4" class="software-group-header">Capture OnTouch</th>
+                    <th rowspan="2" style="width: 9%;" class="text-center">Kofax VRS</th>
+                    <th rowspan="2" style="width: 5%;" class="text-center">TWAIN/ISIS</th>
+                </tr>
+                <tr>
                     <th style="width: 4%;" class="text-center">STD</th>
                     <th style="width: 4%;" class="text-center">Lite</th>
                     <th style="width: 4%;" class="text-center">Web</th>
                     <th style="width: 4%;" class="text-center">PRO</th>
-                    <th style="width: 9%;" class="text-center">Kofax VRS</th>
-                    <th style="width: 5%;" class="text-center">TWAIN/ISIS</th>
                 </tr>
             </thead>
             <tbody>
@@ -382,7 +392,7 @@
                     <td class="text-center">-</td>
                     <td class="text-center">-</td>
                     <td class="text-center">-</td>
-                    <td class="text-center text-red-600 font-bold">PRO</td>
+                    <td class="text-center text-red-800 font-bold">PRO</td>
                     <td class="text-center italic">Professional</td>
                     <td class="text-center">●</td>
                 </tr>
